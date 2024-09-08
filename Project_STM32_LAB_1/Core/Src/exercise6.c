@@ -51,3 +51,22 @@ void RunExercise6(){
 		HAL_Delay(1000);
 	}
 }
+
+// Exercise7
+void clearAllClock(){
+	for(int i = 0; i < 12; i++){
+		HAL_GPIO_WritePin(LED_GPIO_Ports[i], LED_Pins[i], GPIO_PIN_SET);
+	}
+}
+
+// Exercise8
+void setNumberOnClock(int num){
+	HAL_GPIO_WritePin(LED_GPIO_Ports[num], LED_Pins[num], GPIO_PIN_RESET);
+}
+
+// Exercise9
+void clearNumberOnClock(int num){
+	HAL_GPIO_WritePin(LED_GPIO_Ports[num], LED_Pins[num], GPIO_PIN_SET);
+}
+
+

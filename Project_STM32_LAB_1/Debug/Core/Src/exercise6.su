@@ -1,2 +1,5 @@
 exercise6.c:37:6:InitExercise6	16	static
 exercise6.c:43:6:RunExercise6	16	static
+exercise6.c:56:6:clearAllClock	16	static
+exercise6.c:63:6:setNumberOnClock	16	static
+exercise6.c:68:6:clearNumberOnClock	16	static

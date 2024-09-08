@@ -11,4 +11,13 @@
 void InitExercise6();
 void RunExercise6();
 
+// Exercise7
+void clearAllClock();
+
+// Exercise8
+void setNumberOnClock(int num);
+
+// Exercise9
+void clearNumberOnClock(int num);
+
 #endif /* INC_EXERCISE6_H_ */

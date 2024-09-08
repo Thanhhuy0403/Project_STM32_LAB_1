@@ -108,7 +108,8 @@ int main(void)
 //	  RunExercise3();
 //	  RunExercise4();
 //	  RunExercise5();
-	  RunExercise6();
+//	  RunExercise6();
+	  setNumberOnClock(7);
 
 	  HAL_Delay(1000);
     /* USER CODE END WHILE */
