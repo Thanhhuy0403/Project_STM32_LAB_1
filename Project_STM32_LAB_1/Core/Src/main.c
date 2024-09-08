@@ -26,6 +26,7 @@
 #include "exercise2.h"
 #include "exercise3.h"
 #include "exercise4.h"
+#include "exercise5.h"
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/
@@ -103,7 +104,8 @@ int main(void)
 //	  RunExercise1();
 	  RunExercise2();
 	  RunExercise3();
-	  RunExercise4();
+//	  RunExercise4();
+	  RunExercise5();
 
 	  HAL_Delay(1000);
     /* USER CODE END WHILE */
