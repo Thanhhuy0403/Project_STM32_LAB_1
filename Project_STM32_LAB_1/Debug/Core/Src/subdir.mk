@@ -7,6 +7,7 @@
 C_SRCS += \
 ../Core/Src/exercise1.c \
 ../Core/Src/exercise2.c \
+../Core/Src/exercise3.c \
 ../Core/Src/main.c \
 ../Core/Src/stm32f1xx_hal_msp.c \
 ../Core/Src/stm32f1xx_it.c \
@@ -17,6 +18,7 @@ C_SRCS += \
 OBJS += \
 ./Core/Src/exercise1.o \
 ./Core/Src/exercise2.o \
+./Core/Src/exercise3.o \
 ./Core/Src/main.o \
 ./Core/Src/stm32f1xx_hal_msp.o \
 ./Core/Src/stm32f1xx_it.o \
@@ -27,6 +29,7 @@ OBJS += \
 C_DEPS += \
 ./Core/Src/exercise1.d \
 ./Core/Src/exercise2.d \
+./Core/Src/exercise3.d \
 ./Core/Src/main.d \
 ./Core/Src/stm32f1xx_hal_msp.d \
 ./Core/Src/stm32f1xx_it.d \
