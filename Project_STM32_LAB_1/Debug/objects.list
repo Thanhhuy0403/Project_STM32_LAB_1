@@ -1,4 +1,5 @@
 "./Core/Src/exercise1.o"
+"./Core/Src/exercise10.o"
 "./Core/Src/exercise2.o"
 "./Core/Src/exercise3.o"
 "./Core/Src/exercise4.o"

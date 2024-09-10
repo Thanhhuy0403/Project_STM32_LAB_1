@@ -28,6 +28,7 @@
 //#include "exercise4.h"
 //#include "exercise5.h"
 #include "exercise6.h"
+#include "exercise10.h"
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/
@@ -100,7 +101,8 @@ int main(void)
 //  InitExercise2();
 //  InitExercise3();
 //  InitExercise4();
-  InitExercise6();
+//  InitExercise6();
+  InitExercise10();
   while (1)
   {
 //	  RunExercise1();
@@ -109,7 +111,9 @@ int main(void)
 //	  RunExercise4();
 //	  RunExercise5();
 //	  RunExercise6();
-	  setNumberOnClock(7);
+//	  setNumberOnClock(7);
+//	  display7Seg2(4);
+	  RunExercise10();
 
 	  HAL_Delay(1000);
     /* USER CODE END WHILE */
@@ -168,29 +172,35 @@ static void MX_GPIO_Init(void)
   __HAL_RCC_GPIOB_CLK_ENABLE();
 
   /*Configure GPIO pin Output Level */
-  HAL_GPIO_WritePin(GPIOA, LED_Clock_0_Pin|LED_RED_Pin|LED_YELLOW_Pin|LED_GREEN_Pin
-                          |LED_RED_2_Pin|LED_YELLOW_2_Pin|LED_GREEN_2_Pin|LED_Clock_7_Pin
-                          |LED_Clock_8_Pin|LED_Clock_9_Pin|LED_Clock_10_Pin|LED_Clock_11_Pin, GPIO_PIN_RESET);
+  HAL_GPIO_WritePin(GPIOA, SEG2_0_Pin|SEG2_1_Pin|SEG2_2_Pin|LED_Clock_0_Pin
+                          |LED_RED_Pin|LED_YELLOW_Pin|LED_GREEN_Pin|LED_RED_2_Pin
+                          |LED_YELLOW_2_Pin|LED_GREEN_2_Pin|LED_Clock_7_Pin|LED_Clock_8_Pin
+                          |LED_Clock_9_Pin|LED_Clock_10_Pin|LED_Clock_11_Pin, GPIO_PIN_RESET);
 
   /*Configure GPIO pin Output Level */
-  HAL_GPIO_WritePin(GPIOB, SEG_0_Pin|SEG_1_Pin|SEG_2_Pin|SEG_3_Pin
-                          |SEG_4_Pin|SEG_5_Pin|SEG_6_Pin, GPIO_PIN_RESET);
+  HAL_GPIO_WritePin(GPIOB, SEG_0_Pin|SEG_1_Pin|SEG_2_Pin|SEG2_6_Pin
+                          |SEG_3_Pin|SEG_4_Pin|SEG_5_Pin|SEG_6_Pin
+                          |SEG2_3_Pin|SEG2_4_Pin|SEG2_5_Pin, GPIO_PIN_RESET);
 
-  /*Configure GPIO pins : LED_Clock_0_Pin LED_RED_Pin LED_YELLOW_Pin LED_GREEN_Pin
-                           LED_RED_2_Pin LED_YELLOW_2_Pin LED_GREEN_2_Pin LED_Clock_7_Pin
-                           LED_Clock_8_Pin LED_Clock_9_Pin LED_Clock_10_Pin LED_Clock_11_Pin */
-  GPIO_InitStruct.Pin = LED_Clock_0_Pin|LED_RED_Pin|LED_YELLOW_Pin|LED_GREEN_Pin
-                          |LED_RED_2_Pin|LED_YELLOW_2_Pin|LED_GREEN_2_Pin|LED_Clock_7_Pin
-                          |LED_Clock_8_Pin|LED_Clock_9_Pin|LED_Clock_10_Pin|LED_Clock_11_Pin;
+  /*Configure GPIO pins : SEG2_0_Pin SEG2_1_Pin SEG2_2_Pin LED_Clock_0_Pin
+                           LED_RED_Pin LED_YELLOW_Pin LED_GREEN_Pin LED_RED_2_Pin
+                           LED_YELLOW_2_Pin LED_GREEN_2_Pin LED_Clock_7_Pin LED_Clock_8_Pin
+                           LED_Clock_9_Pin LED_Clock_10_Pin LED_Clock_11_Pin */
+  GPIO_InitStruct.Pin = SEG2_0_Pin|SEG2_1_Pin|SEG2_2_Pin|LED_Clock_0_Pin
+                          |LED_RED_Pin|LED_YELLOW_Pin|LED_GREEN_Pin|LED_RED_2_Pin
+                          |LED_YELLOW_2_Pin|LED_GREEN_2_Pin|LED_Clock_7_Pin|LED_Clock_8_Pin
+                          |LED_Clock_9_Pin|LED_Clock_10_Pin|LED_Clock_11_Pin;
   GPIO_InitStruct.Mode = GPIO_MODE_OUTPUT_PP;
   GPIO_InitStruct.Pull = GPIO_NOPULL;
   GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_LOW;
   HAL_GPIO_Init(GPIOA, &GPIO_InitStruct);
 
-  /*Configure GPIO pins : SEG_0_Pin SEG_1_Pin SEG_2_Pin SEG_3_Pin
-                           SEG_4_Pin SEG_5_Pin SEG_6_Pin */
-  GPIO_InitStruct.Pin = SEG_0_Pin|SEG_1_Pin|SEG_2_Pin|SEG_3_Pin
-                          |SEG_4_Pin|SEG_5_Pin|SEG_6_Pin;
+  /*Configure GPIO pins : SEG_0_Pin SEG_1_Pin SEG_2_Pin SEG2_6_Pin
+                           SEG_3_Pin SEG_4_Pin SEG_5_Pin SEG_6_Pin
+                           SEG2_3_Pin SEG2_4_Pin SEG2_5_Pin */
+  GPIO_InitStruct.Pin = SEG_0_Pin|SEG_1_Pin|SEG_2_Pin|SEG2_6_Pin
+                          |SEG_3_Pin|SEG_4_Pin|SEG_5_Pin|SEG_6_Pin
+                          |SEG2_3_Pin|SEG2_4_Pin|SEG2_5_Pin;
   GPIO_InitStruct.Mode = GPIO_MODE_OUTPUT_PP;
   GPIO_InitStruct.Pull = GPIO_NOPULL;
   GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_LOW;
