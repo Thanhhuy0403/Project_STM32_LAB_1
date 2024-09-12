@@ -10,6 +10,5 @@
 
 void InitExercise10();
 void RunExercise10();
-void display7Seg2(int num);
 
 #endif /* INC_EXERCISE10_H_ */

@@ -61,11 +61,13 @@ void clearAllClock(){
 
 // Exercise8
 void setNumberOnClock(int num){
+	if(num >= 12 || num < 0) return;
 	HAL_GPIO_WritePin(LED_GPIO_Ports[num], LED_Pins[num], GPIO_PIN_RESET);
 }
 
 // Exercise9
 void clearNumberOnClock(int num){
+	if(num >= 12 || num < 0) return;
 	HAL_GPIO_WritePin(LED_GPIO_Ports[num], LED_Pins[num], GPIO_PIN_SET);
 }
 
