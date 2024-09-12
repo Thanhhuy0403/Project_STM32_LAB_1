@@ -21,7 +21,7 @@ Core/Src/exercise5.o: ../Core/Src/exercise5.c ../Core/Inc/exercise5.h \
  ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_flash.h \
  ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_flash_ex.h \
  ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_pwr.h \
- ../Core/Inc/exercise2.h ../Core/Inc/exercise4.h
+ ../Core/Inc/exercise2.h ../Core/Inc/exercise4.h ../Core/Inc/exercise3.h
 
 ../Core/Inc/exercise5.h:
 
@@ -74,3 +74,5 @@ Core/Src/exercise5.o: ../Core/Src/exercise5.c ../Core/Inc/exercise5.h \
 ../Core/Inc/exercise2.h:
 
 ../Core/Inc/exercise4.h:
+
+../Core/Inc/exercise3.h:
