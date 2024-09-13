@@ -8,6 +8,7 @@
 #ifndef INC_EXERCISE6_H_
 #define INC_EXERCISE6_H_
 
+extern int cnt_led_clock;
 void InitExercise6();
 void RunExercise6();
 
