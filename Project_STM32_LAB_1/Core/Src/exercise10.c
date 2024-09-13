@@ -1,7 +1,7 @@
 /*
  * exercise10.c
  *
- *  Created on: Sep 8, 2024
+ *  Created on: Sep 13, 2024
  *      Author: phan thanh huy
  */
 
@@ -52,5 +52,4 @@ void RunExercise10(){
 	// handle hour
 	setNumberOnClock(cnt_hour);
 }
-
 
