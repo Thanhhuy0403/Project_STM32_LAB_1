@@ -40,16 +40,16 @@ void InitExercise6(){
 	}
 }
 
+int cnt_led_clock = 1;
 void RunExercise6(){
-	for(int i = 0; i < 12; i++){
-		if(i == 0){
-			HAL_GPIO_WritePin(LED_GPIO_Ports[11], LED_Pins[11], GPIO_PIN_SET);
-		}else{
-		  HAL_GPIO_WritePin(LED_GPIO_Ports[i-1], LED_Pins[i-1], GPIO_PIN_SET);
-		}
-		HAL_GPIO_WritePin(LED_GPIO_Ports[i], LED_Pins[i], GPIO_PIN_RESET);
-		HAL_Delay(1000);
+	if(cnt_led_clock == 12){
+		cnt_led_clock = 0;
+		HAL_GPIO_WritePin(LED_GPIO_Ports[11], LED_Pins[11], GPIO_PIN_SET);
+	}else{
+		HAL_GPIO_WritePin(LED_GPIO_Ports[cnt_led_clock-1], LED_Pins[cnt_led_clock-1], GPIO_PIN_SET);
 	}
+	HAL_GPIO_WritePin(LED_GPIO_Ports[cnt_led_clock], LED_Pins[cnt_led_clock], GPIO_PIN_RESET);
+	cnt_led_clock++;
 }
 
 // Exercise7
