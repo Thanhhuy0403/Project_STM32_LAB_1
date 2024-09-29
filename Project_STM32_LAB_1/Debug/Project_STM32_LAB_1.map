@@ -2564,11 +2564,12 @@ LOAD c:/st/stm32cubeide_1.7.0/stm32cubeide/plugins/com.st.stm32cube.ide.mcu.exte
  .text.clearNumberOnClock
                 0x0000000008000308       0x40 ./Core/Src/exercise6.o
                 0x0000000008000308                clearNumberOnClock
- .text.main     0x0000000008000348       0x22 ./Core/Src/main.o
+ .text.main     0x0000000008000348       0x20 ./Core/Src/main.o
                 0x0000000008000348                main
  .text.SystemClock_Config
-                0x000000000800036a       0x76 ./Core/Src/main.o
-                0x000000000800036a                SystemClock_Config
+                0x0000000008000368       0x76 ./Core/Src/main.o
+                0x0000000008000368                SystemClock_Config
+ *fill*         0x00000000080003de        0x2 
  .text.MX_GPIO_Init
                 0x00000000080003e0       0xac ./Core/Src/main.o
  .text.Error_Handler

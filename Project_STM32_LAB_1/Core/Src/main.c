@@ -115,7 +115,7 @@ int main(void)
 //	  display7Seg2(4);
 	  RunExercise10();
 
-	  HAL_Delay(1000);
+	  HAL_Delay(100);
     /* USER CODE END WHILE */
 
     /* USER CODE BEGIN 3 */
